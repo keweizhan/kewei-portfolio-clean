@@ -2,7 +2,7 @@
 
 面向 AI 应用工程、后端基础设施与全栈系统的个人作品集网站。
 
-- **在线网站：** [https://kewei.one](https://kewei.one)
+- **在线网站：** [https://kewei.one/zh-CN](https://kewei.one/zh-CN)
 - **GitHub 仓库：** [github.com/keweizhan/kewei-portfolio-clean](https://github.com/keweizhan/kewei-portfolio-clean)
 
 **其他语言：** [English](README.md)

@@ -2,7 +2,7 @@
 
 Personal portfolio for AI application engineering, backend infrastructure, and full-stack systems.
 
-- **Website:** [https://kewei.one](https://kewei.one)
+- **Website:** [https://kewei.one/en](https://kewei.one/en)
 - **Repository:** [github.com/keweizhan/kewei-portfolio-clean](https://github.com/keweizhan/kewei-portfolio-clean)
 
 ## Overview

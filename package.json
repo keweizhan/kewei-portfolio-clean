@@ -2,7 +2,7 @@
   "name": "keweizhan-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kewei.one",
+  "homepage": "https://kewei.one/en",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
