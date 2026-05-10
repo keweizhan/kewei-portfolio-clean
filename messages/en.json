@@ -1,0 +1,141 @@
+{
+  "Metadata": {
+    "title": "Kewei Zhan — Full-stack / AI Application Engineer",
+    "description": "Portfolio of Kewei Zhan, a full-stack and AI application engineer building distributed AI systems, backend platforms, and production-style developer tools."
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "works": "Works",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Header": {
+    "roleMobile1": "Full-stack /",
+    "roleMobile2": "AI Engineer",
+    "roleDesktop": "Full-stack / AI Application Engineer"
+  },
+  "NavOverlay": {
+    "emailLabel": "Email Address",
+    "copyEmail": "Copy email",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "Hero": {
+    "tagline": "I build production-oriented AI systems, backend platforms, and developer tools.",
+    "tagline2": "Focused on LLM agents, backend infrastructure, and AI evaluation pipelines.",
+    "cta": "View Projects",
+    "imageAlt": "Profile photo",
+    "availabilityMobileLine1": "Available for",
+    "availabilityMobileLine2": "2026 Roles",
+    "availabilityDesktop": "Available for 2026 Roles",
+    "location": "Los Angeles, CA"
+  },
+  "WhatIDo": {
+    "heading": "WHAT I DO /",
+    "label": "(Services)",
+    "intro": "I design and build production-oriented backend systems, AI agent workflows, and full-stack software products — engineering for reliability, not just functionality.",
+    "services": [
+      {
+        "number": "01",
+        "title": "Distributed AI Systems",
+        "description": "I design backend systems that connect APIs, async workers, databases, queues, monitoring, and deployment into production-style AI applications.",
+        "skills": [
+          "FastAPI, Celery, Redis, PostgreSQL",
+          "Prometheus, Grafana, Docker Compose",
+          "LLM Agents, Async Task Execution"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "LLM / RAG Applications",
+        "description": "I build LLM agent workflows, retrieval-augmented generation features, tool execution flows, and evaluation-friendly AI pipelines.",
+        "skills": [
+          "LLM Agents, Tool Execution Flows",
+          "RAG, Retrieval-Augmented Generation",
+          "Evaluation Pipelines, Prompt Engineering"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "Full-stack Product Engineering",
+        "description": "I develop end-to-end products with authentication, authorization, database persistence, frontend interfaces, and cloud deployment.",
+        "skills": [
+          "Spring Boot, FastAPI, REST APIs",
+          "React, Next.js, TypeScript",
+          "PostgreSQL, Docker, Cloud Deployment"
+        ]
+      }
+    ]
+  },
+  "Works": {
+    "heading": "SELECTED WORKS /",
+    "label": "(PROJECTS)",
+    "intro": "Production-oriented AI and backend systems, built for reliability, observability, and real-world scale.",
+    "projects": [
+      {
+        "category": "AI Systems / Backend Infrastructure",
+        "title": "Distributed AI Agent Platform",
+        "year": "2026",
+        "tags": ["FastAPI", "Celery", "Redis", "PostgreSQL", "Docker"]
+      },
+      {
+        "category": "AI / Speech Processing",
+        "title": "SwitchNet Bilingual ASR Pipeline",
+        "year": "2025",
+        "tags": ["Python", "Whisper", "WhisperX", "ASR Evaluation"]
+      }
+    ]
+  },
+  "About": {
+    "line1": "ENGINEER",
+    "line2": "BUILDER",
+    "line3": "CREATOR/",
+    "skillsHeading": "Skills",
+    "skillGroups": [
+      { "title": "Languages" },
+      { "title": "Backend / Frontend" },
+      { "title": "AI / Infrastructure" }
+    ],
+    "aboutImageAlt": "About image",
+    "lead": "I'm a Computer Engineering master's student at USC building production-oriented AI and full-stack systems.",
+    "aboutLabel": "(About Me)",
+    "p1": "My work combines backend engineering, distributed task execution, AI pipeline evaluation, and frontend product interfaces. Recently focused on LLM agents, bilingual ASR evaluation, and production-style developer platforms.",
+    "p2": "B.S. Computer Science, Virginia Tech (minor in HCI). M.S. Computer Engineering, USC — expected Spring 2026. Co-authored a publication on AI-based license plate recognition, indexed by EI / Scopus / CPCI."
+  },
+  "Contact": {
+    "heading": "Let's Work Together",
+    "subheading": "Open to full-time software engineering roles in 2026."
+  },
+  "Form": {
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email address",
+    "messagePlaceholder": "Tell me about the role or project",
+    "nameRequired": "Please enter your name",
+    "emailRequired": "Please enter your email",
+    "emailInvalid": "Please enter a valid email address",
+    "messageRequired": "Please describe the opportunity",
+    "submitSending": "Sending…",
+    "submitIdle": "Send Message",
+    "successTitle": "Got it! I'll get back to you shortly.",
+    "successAgain": "Send another message",
+    "errorTitle": "Something went wrong. Please try again.",
+    "errorBack": "Go back"
+  },
+  "Footer": {
+    "menu": "Menu",
+    "socials": "Socials",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "localTime": "Local Time",
+    "scrollToTop": "Scroll to top"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "zhCN": "简体中文",
+    "zhTW": "繁體中文"
+  }
+}

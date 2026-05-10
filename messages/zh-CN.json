@@ -1,0 +1,141 @@
+{
+  "Metadata": {
+    "title": "Kewei Zhan — 全栈 / AI 应用工程师",
+    "description": "Kewei Zhan 的个人作品集，全栈与 AI 应用工程师，专注于构建分布式 AI 系统、后端平台与生产级开发者工具。"
+  },
+  "Nav": {
+    "home": "首页",
+    "services": "服务",
+    "works": "作品",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "Header": {
+    "roleMobile1": "全栈 /",
+    "roleMobile2": "AI 工程师",
+    "roleDesktop": "全栈 / AI 应用工程师"
+  },
+  "NavOverlay": {
+    "emailLabel": "电子邮箱",
+    "copyEmail": "复制邮箱",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "Hero": {
+    "tagline": "I build production-oriented AI systems, backend platforms, and developer tools.",
+    "tagline2": "Focused on LLM agents, backend infrastructure, and AI evaluation pipelines.",
+    "cta": "查看项目",
+    "imageAlt": "个人照片",
+    "availabilityMobileLine1": "2026 年",
+    "availabilityMobileLine2": "求职中",
+    "availabilityDesktop": "2026 年求职中",
+    "location": "洛杉矶，加州"
+  },
+  "WhatIDo": {
+    "heading": "我能做什么 /",
+    "label": "（提供服务）",
+    "intro": "我设计并构建生产级后端系统、AI 智能体工作流与全栈软件产品——以工程可靠性为核心，而非仅仅追求功能实现。",
+    "services": [
+      {
+        "number": "01",
+        "title": "分布式 AI 系统",
+        "description": "我设计将 API、异步工作节点、数据库、消息队列、监控与部署整合为生产级 AI 应用的后端系统。",
+        "skills": [
+          "FastAPI, Celery, Redis, PostgreSQL",
+          "Prometheus, Grafana, Docker Compose",
+          "LLM Agents, 异步任务执行"
+        ]
+      },
+      {
+        "number": "02",
+        "title": "LLM / RAG 应用",
+        "description": "我构建 LLM 智能体工作流、检索增强生成功能、工具执行流程与面向评测的 AI 管道。",
+        "skills": [
+          "LLM Agents，工具执行流程",
+          "RAG，检索增强生成",
+          "评测管道，Prompt 工程"
+        ]
+      },
+      {
+        "number": "03",
+        "title": "全栈产品工程",
+        "description": "我开发具备认证授权、数据库持久化、前端界面与云端部署的端到端软件产品。",
+        "skills": [
+          "Spring Boot, FastAPI, REST APIs",
+          "React, Next.js, TypeScript",
+          "PostgreSQL, Docker, 云部署"
+        ]
+      }
+    ]
+  },
+  "Works": {
+    "heading": "精选作品 /",
+    "label": "（项目）",
+    "intro": "面向生产的 AI 与后端系统，专注于可靠性、可观测性与真实场景下的规模化能力。",
+    "projects": [
+      {
+        "category": "AI 系统 / 后端基础设施",
+        "title": "Distributed AI Agent Platform",
+        "year": "2026",
+        "tags": ["FastAPI", "Celery", "Redis", "PostgreSQL", "Docker"]
+      },
+      {
+        "category": "AI / 语音处理",
+        "title": "SwitchNet Bilingual ASR Pipeline",
+        "year": "2025",
+        "tags": ["Python", "Whisper", "WhisperX", "ASR Evaluation"]
+      }
+    ]
+  },
+  "About": {
+    "line1": "工程师",
+    "line2": "构建者",
+    "line3": "创造者/",
+    "skillsHeading": "技术栈",
+    "skillGroups": [
+      { "title": "编程语言" },
+      { "title": "后端 / 前端" },
+      { "title": "AI / 基础设施" }
+    ],
+    "aboutImageAlt": "关于配图",
+    "lead": "我是南加州大学计算机工程硕士在读生，专注于构建生产级 AI 与全栈系统。",
+    "aboutLabel": "（关于我）",
+    "p1": "我的工作涵盖后端工程、分布式任务执行、AI 管道评测与前端产品界面。近期专注于 LLM 智能体、双语 ASR 评测与生产级开发者平台。",
+    "p2": "弗吉尼亚理工学院计算机科学学士（辅修人机交互）。南加州大学计算机工程硕士，预计 2026 年春季毕业。曾共同发表基于 AI 的车牌识别研究论文，已被 EI / Scopus / CPCI 检索。"
+  },
+  "Contact": {
+    "heading": "期待合作",
+    "subheading": "2026 年寻求全职软件工程岗位。"
+  },
+  "Form": {
+    "namePlaceholder": "您的姓名",
+    "emailPlaceholder": "您的邮箱",
+    "messagePlaceholder": "请描述岗位或项目",
+    "nameRequired": "请输入姓名",
+    "emailRequired": "请输入邮箱",
+    "emailInvalid": "请输入有效的邮箱地址",
+    "messageRequired": "请描述您的需求",
+    "submitSending": "发送中…",
+    "submitIdle": "发送消息",
+    "successTitle": "收到！我会尽快回复您。",
+    "successAgain": "再发一条",
+    "errorTitle": "出错了，请重试。",
+    "errorBack": "返回"
+  },
+  "Footer": {
+    "menu": "菜单",
+    "socials": "社交",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "localTime": "本地时间",
+    "scrollToTop": "回到顶部"
+  },
+  "LocaleSwitcher": {
+    "label": "语言",
+    "en": "English",
+    "zhCN": "简体中文",
+    "zhTW": "繁體中文"
+  }
+}
