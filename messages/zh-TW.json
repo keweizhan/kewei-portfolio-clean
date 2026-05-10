@@ -24,8 +24,8 @@
     "linkedin": "LinkedIn"
   },
   "Hero": {
-    "tagline": "I build production-oriented AI systems, backend platforms, and developer tools.",
-    "tagline2": "Focused on LLM agents, backend infrastructure, and AI evaluation pipelines.",
+    "tagline": "我建構面向生產環境的 AI 系統、後端平台與開發者工具。",
+    "tagline2": "專注於 LLM Agent、後端基礎設施與 AI 評測流程。",
     "cta": "查看專案",
     "imageAlt": "個人照片",
     "availabilityMobileLine1": "2026 年",
@@ -51,11 +51,11 @@
       {
         "number": "02",
         "title": "LLM / RAG 應用",
-        "description": "我建構 LLM 智能體工作流、檢索增強生成功能、工具執行流程與面向評測的 AI 管道。",
+        "description": "我建構 LLM 智能體工作流、檢索增強生成能力、工具執行流程與 AI 評測流程。",
         "skills": [
           "LLM Agents，工具執行流程",
           "RAG，檢索增強生成",
-          "評測管道，Prompt 工程"
+          "AI 評測流程，Prompt 工程"
         ]
       },
       {
@@ -102,7 +102,7 @@
     "aboutImageAlt": "關於配圖",
     "lead": "我是南加州大學電腦工程碩士在讀生，專注於建構生產級 AI 與全端系統。",
     "aboutLabel": "（關於我）",
-    "p1": "我的工作涵蓋後端工程、分散式任務執行、AI 管道評測與前端產品介面。近期專注於 LLM 智能體、雙語 ASR 評測與生產級開發者平台。",
+    "p1": "我的工作涵蓋後端工程、分散式任務執行、AI 評測流程與前端產品介面。近期專注於 LLM 智能體、雙語 ASR 評測與生產級開發者平台。",
     "p2": "維吉尼亞理工學院電腦科學學士（輔修人機互動）。南加州大學電腦工程碩士，預計 2026 年春季畢業。曾共同發表基於 AI 的車牌辨識研究論文，已被 EI / Scopus / CPCI 收錄。"
   },
   "Contact": {

@@ -14,8 +14,7 @@ const socialLinks = [
   { labelKey: "linkedin" as const, href: "https://www.linkedin.com/in/kewei-zhan/" },
 ];
 
-// TODO: Replace with your actual email address
-const EMAIL = "TODO_EMAIL@example.com";
+const EMAIL = "keweizhan7@gmail.com";
 
 const EASE = [0.76, 0, 0.24, 1] as const;
 
