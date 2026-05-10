@@ -1,71 +1,77 @@
-# Kewei Zhan — Portfolio
+# Kewei Zhan Portfolio
 
-Personal portfolio website for **Kewei Zhan**, a full-stack and AI application engineer building distributed AI systems, backend platforms, and production-style developer tools.
+Personal portfolio for AI application engineering, backend infrastructure, and full-stack systems.
 
-## Features
+## Overview
 
-- Section-based landing page (hero, what I do, selected works, about, contact, footer)
-- Two featured AI/backend projects with scroll-linked interactions and counter animation
-- Smooth scrolling (Lenis) and animation (GSAP, Motion / Framer Motion-style)
-- Contact form that posts to a server route and sends email via [Resend](https://resend.com)
-- Bilingual locale support (English, Simplified Chinese, Traditional Chinese) via next-intl
+This is the source for [Kewei Zhan](https://github.com/keweizhan)'s personal portfolio website. Kewei is a USC M.S. Computer Engineering student focused on AI application engineering, backend infrastructure, LLM agents, ASR evaluation, and full-stack systems. The site showcases featured projects, services, an about section, and a contact form, and is fully bilingual (English / 简体中文 / 繁體中文).
 
 ## Tech Stack
 
 - **Framework:** Next.js 16 (App Router), React 19, TypeScript
 - **Styling:** Tailwind CSS 4
-- **UI:** Radix UI primitives, Lucide icons, class-variance-authority / clsx / tailwind-merge
-- **Motion:** GSAP, Motion (`motion/react`), `@gsap/react`
+- **Animation:** Motion (`motion/react`, Framer Motion-style), GSAP
 - **Scrolling:** Lenis
+- **i18n:** next-intl (`en`, `zh-CN`, `zh-TW`)
 - **Forms:** react-hook-form
-- **Email:** Resend + `@react-email/components`
-- **i18n:** next-intl (en, zh-CN, zh-TW)
+- **Email:** Resend
+- **Deployment target:** Vercel
 
-## Local Setup
+## Featured Projects
 
-Install dependencies:
+### 1. Distributed AI Agent Platform
+**Repo:** https://github.com/keweizhan/Distributed-ai-agent-platform
+
+A production-oriented AI agent platform built with FastAPI, Celery, Redis, PostgreSQL, and Docker sandboxing. Includes JWT auth, workspace isolation, optional Qdrant vector memory, Prometheus / Grafana observability, and structured LLM planning and execution flows.
+
+### 2. SwitchNet Bilingual ASR Pipeline
+**Repo:** https://github.com/keweizhan/SwitchNet
+
+A bilingual / code-switching ASR evaluation and demo framework using Whisper and WhisperX. Provides manifest-driven experiments, switch-point analysis, subtitle export, and a Streamlit demo for interactive evaluation.
+
+## Features
+
+- Single-page hero / services / works / about / contact layout with scroll-linked animation
+- Sticky-stacked services accordion and counter-driven project carousel
+- Smooth scrolling (Lenis) and motion choreography
+- Bilingual content via `next-intl` (English, Simplified Chinese, Traditional Chinese)
+- Contact form posting to a Next.js API route and delivering email via Resend
+- Custom inline-SVG favicon and branded tab title
+
+## Getting Started
 
 ```bash
-npm install
+pnpm install
+pnpm dev
 ```
 
-Run the development server:
+Then open [http://localhost:3000](http://localhost:3000). Source files live under `src/`; edits hot-reload during development.
 
-```bash
-npm run dev
-```
+Common scripts:
 
-Open [http://localhost:3000](http://localhost:3000). Edit files under `src/`; the app hot-reloads during development.
-
-### Scripts
-
-| Command           | Description               |
-| ----------------- | ------------------------- |
-| `npm run dev`     | Start dev server          |
-| `npm run build`   | Production build          |
-| `npm run start`   | Run production server     |
-| `npm run lint`    | Run ESLint                |
-
-## TODOs Before Shipping
-
-- [ ] Replace `TODO_EMAIL@example.com` in `src/app/api/send/route.ts` and `src/components/layout/NavOverlay.tsx` with your real email
-- [x] Replace `TODO_LINKEDIN_URL` in `src/components/layout/Footer.tsx` and `NavOverlay.tsx` with your LinkedIn URL
-- [ ] Add your profile photo at `src/assets/image/cover.jpg` and restore the `<Image>` in `HeroSection.tsx`
-- [ ] Add your about photo at `public/images/about/me.webp` and restore the `<Image>` in `AboutSection.tsx`
-- [ ] Add project screenshots (see TODO comments in `SelectedWorksSection.tsx`)
-- [ ] Place your resume PDF at `public/resume.pdf` if you add a resume link
-- [ ] Verify your sending domain in the Resend dashboard and update the `from` address in `route.ts`
-- [ ] Set `RESEND_API_KEY` in `.env.local` for local contact form testing
+| Command       | Description                |
+| ------------- | -------------------------- |
+| `pnpm dev`    | Start the dev server       |
+| `pnpm build`  | Production build           |
+| `pnpm start`  | Run the production server  |
+| `pnpm lint`   | Run ESLint                 |
 
 ## Environment Variables
 
-The contact form in [`src/app/api/send/route.ts`](src/app/api/send/route.ts) uses Resend.
+The contact form ([`src/app/api/send/route.ts`](src/app/api/send/route.ts)) uses Resend.
 
-- **`RESEND_API_KEY`** — required for sending mail. Set locally in `.env.local` and in your hosting environment for production. Do not commit real API keys.
+| Variable           | Required | Purpose                                                                 |
+| ------------------ | -------- | ----------------------------------------------------------------------- |
+| `RESEND_API_KEY`   | Yes      | Resend API key for sending mail. Get one at <https://resend.com>.       |
+| `CONTACT_TO_EMAIL` | No       | Recipient address for contact form submissions. Falls back to a default if unset. |
+
+Set these in a local `.env.local` file for development and in your hosting provider's environment for production. A sample is included as `.env.example`.
+
+**`.env.local` must never be committed** — it is matched by the `.env*` rule in [`.gitignore`](.gitignore), while `.env.example` is explicitly tracked via the `!.env.example` exception.
 
 ## Deployment
 
-Deploy on [Vercel](https://vercel.com) or any platform that supports Next.js. Configure `RESEND_API_KEY` in the project's environment variables.
+Designed for [Vercel](https://vercel.com), and can be deployed on any platform that supports Next.js. Make sure `RESEND_API_KEY` (and optionally `CONTACT_TO_EMAIL`) are configured in the project's environment variables.
 
 - [Next.js — Deploying](https://nextjs.org/docs/app/building-your-application/deploying)
 
