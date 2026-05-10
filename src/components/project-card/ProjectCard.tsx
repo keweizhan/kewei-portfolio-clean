@@ -13,6 +13,7 @@ interface ProjectCardProps {
     tags?: string[];
     videoElement?: React.ReactNode;
     className?: string;
+    href?: string;
 }
 
 const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(({
@@ -23,8 +24,20 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(({
     year,
     tags = ["Development"],
     videoElement,
-    className
+    className,
+    href,
 }: ProjectCardProps, ref) => {
+    const titleNode = (
+        <DecryptedText
+            once={false}
+            stagger={48}
+            duration={330}
+            scrambleSpeed={34}
+            className="block text-[clamp(27px,2.5vw,43px)] font-semibold leading-none tracking-tighter"
+        >
+            {title}
+        </DecryptedText>
+    );
     return (
         <div className={cn("space-y-2", className)}>
             {/* 卡片容器 */}
@@ -74,15 +87,19 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(({
                     >
                         {category}
                     </DecryptedText>
-                    <DecryptedText
-                        once={false}
-                        stagger={48}
-                        duration={330}
-                        scrambleSpeed={34}
-                        className="block text-[clamp(27px,2.5vw,43px)] font-semibold leading-none tracking-tighter"
-                    >
-                        {title}
-                    </DecryptedText>
+                    {href ? (
+                        <a
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block transition-opacity hover:opacity-70 focus-visible:opacity-70 focus-visible:outline-none"
+                            aria-label={`${title} (opens GitHub repository in a new tab)`}
+                        >
+                            {titleNode}
+                        </a>
+                    ) : (
+                        titleNode
+                    )}
                 </div>
 
                 {/* 右侧标签区 */}

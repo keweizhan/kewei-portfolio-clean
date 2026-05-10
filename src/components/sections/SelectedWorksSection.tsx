@@ -16,6 +16,7 @@ const PROJECT_ASSETS = [
   {
     bgImage: "/images/projects/works_bg_01.webp",
     previewImage: "/images/projects/works_agent_platform.webp",
+    href: "https://github.com/keweizhan/Distributed-ai-agent-platform",
   },
   {
     bgImage: "/images/projects/works_bg_02.webp",
