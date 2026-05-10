@@ -33,7 +33,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(({
             stagger={48}
             duration={330}
             scrambleSpeed={34}
-            className="block text-[clamp(27px,2.5vw,43px)] font-semibold leading-none tracking-tighter"
+            className="block text-[clamp(27px,2.5vw,43px)] font-semibold leading-none tracking-tighter lg:whitespace-nowrap"
         >
             {title}
         </DecryptedText>
@@ -74,10 +74,10 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(({
             </div>
 
             {/* 底部信息 */}
-            <div className="flex flex-col justify-between gap-y-4 lg:flex-row">
+            <div className="flex flex-col gap-y-4">
 
                 {/* 左侧标题区 */}
-                <div className="flex flex-col gap-y-2">
+                <div className="flex flex-col gap-y-2 min-w-0">
                     <DecryptedText
                         once={false}
                         stagger={48}
@@ -103,7 +103,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(({
                 </div>
 
                 {/* 右侧标签区 */}
-                <div className="flex items-end gap-x-2">
+                <div className="flex flex-wrap items-end gap-x-2 gap-y-2">
                     {tags.map((tag) => (
                         <Badge key={tag} variant="outline">
                             {tag}

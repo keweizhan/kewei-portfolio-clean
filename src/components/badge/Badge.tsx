@@ -14,7 +14,7 @@ export default function Badge({
     return (
         <span
             className={clsx(
-                "rounded-full px-3 py-1 text-xs lg:text-sm font-medium tracking-tight",
+                "rounded-full px-3 py-1 text-xs lg:text-sm font-medium tracking-tight whitespace-nowrap",
                 {
                     // outline 样式
                     "border-[1.75px] border-secondary-foreground/70 text-secondary-foreground/70 uppercase":
