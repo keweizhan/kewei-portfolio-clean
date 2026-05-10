@@ -2,6 +2,9 @@
 
 Personal portfolio for AI application engineering, backend infrastructure, and full-stack systems.
 
+- **Website:** [https://kewei.one](https://kewei.one)
+- **Repository:** [github.com/keweizhan/kewei-portfolio-clean](https://github.com/keweizhan/kewei-portfolio-clean)
+
 ## Overview
 
 This is the source for [Kewei Zhan](https://github.com/keweizhan)'s personal portfolio website. Kewei is a USC M.S. Computer Engineering student focused on AI application engineering, backend infrastructure, LLM agents, ASR evaluation, and full-stack systems. The site showcases featured projects, services, an about section, and a contact form, and is fully bilingual (English / 简体中文 / 繁體中文).
