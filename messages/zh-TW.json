@@ -84,7 +84,7 @@
       {
         "category": "AI / 語音處理",
         "title": "SwitchNet Bilingual ASR Pipeline",
-        "year": "2025",
+        "year": "2026",
         "tags": ["Python", "Whisper", "WhisperX", "ASR Evaluation"]
       }
     ]

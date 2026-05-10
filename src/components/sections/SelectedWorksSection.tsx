@@ -21,6 +21,7 @@ const PROJECT_ASSETS = [
   {
     bgImage: "/images/projects/works_bg_02.webp",
     previewImage: "/images/projects/works_switchnet.webp",
+    href: "https://github.com/keweizhan/SwitchNet",
   },
 ];
 
