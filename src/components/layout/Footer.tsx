@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { ArrowUp } from "lucide-react";
 import { motion } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
@@ -9,12 +10,78 @@ import { RollingText } from "@/components/ui/RollingText";
 
 const MENU_IDS: SectionId[] = ["home", "services", "works", "about", "contact"];
 
-type SocialItem = { kind: "link"; id: "github" | "linkedin"; href: string };
+type SocialItem =
+  | { kind: "link"; id: "github" | "linkedin"; href: string }
+  | { kind: "qr"; id: "wechat"; image: string };
 
 const socialItems: SocialItem[] = [
   { kind: "link", id: "github", href: "https://github.com/keweizhan" },
   { kind: "link", id: "linkedin", href: "https://www.linkedin.com/in/kewei-zhan/" },
+  { kind: "qr", id: "wechat", image: "/images/footer/wechat.webp" },
 ];
+
+function WeChatItem({ label, image, alt }: { label: string; image: string; alt: string }) {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLLIElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    const onPointer = (e: MouseEvent | TouchEvent) => {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    window.addEventListener("mousedown", onPointer);
+    window.addEventListener("touchstart", onPointer);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      window.removeEventListener("mousedown", onPointer);
+      window.removeEventListener("touchstart", onPointer);
+    };
+  }, [open]);
+
+  return (
+    <li
+      ref={containerRef}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button
+        type="button"
+        aria-haspopup="dialog"
+        aria-expanded={open}
+        onClick={() => setOpen((o) => !o)}
+        onFocus={() => setOpen(true)}
+        onBlur={(e) => {
+          if (!containerRef.current?.contains(e.relatedTarget as Node)) setOpen(false);
+        }}
+        className="group text-secondary/60 tracking-tighter hover:text-secondary/80 transition-colors overflow-hidden cursor-pointer"
+      >
+        <RollingText className="text-base sm:text-lg lg:text-xl">{label}</RollingText>
+      </button>
+      {open && (
+        <div
+          role="dialog"
+          aria-label={alt}
+          className="absolute bottom-full left-1/2 z-50 mb-3 w-[240px] -translate-x-1/2 rounded-2xl bg-white p-3 shadow-2xl sm:w-[260px] md:w-[280px]"
+        >
+          <Image
+            src={image}
+            alt={alt}
+            width={420}
+            height={560}
+            className="block w-full h-auto"
+          />
+        </div>
+      )}
+    </li>
+  );
+}
 
 function LocalClock() {
   const locale = useLocale();
@@ -107,18 +174,30 @@ export default function Footer() {
             {tFooter("socials")}
           </h3>
           <ul className="flex flex-col gap-1.5">
-            {socialItems.map((item) => (
-              <li key={item.id}>
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group text-secondary/60 tracking-tighter hover:text-secondary/80 transition-colors overflow-hidden"
-                >
-                  <RollingText className="text-base sm:text-lg lg:text-xl">{tFooter(item.id)}</RollingText>
-                </a>
-              </li>
-            ))}
+            {socialItems.map((item) => {
+              if (item.kind === "qr") {
+                return (
+                  <WeChatItem
+                    key={item.id}
+                    label={tFooter(item.id)}
+                    image={item.image}
+                    alt={tFooter("wechatAlt")}
+                  />
+                );
+              }
+              return (
+                <li key={item.id}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group text-secondary/60 tracking-tighter hover:text-secondary/80 transition-colors overflow-hidden"
+                  >
+                    <RollingText className="text-base sm:text-lg lg:text-xl">{tFooter(item.id)}</RollingText>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

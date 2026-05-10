@@ -129,6 +129,8 @@
     "socials": "社交",
     "github": "GitHub",
     "linkedin": "LinkedIn",
+    "wechat": "微信",
+    "wechatAlt": "微信二维码",
     "localTime": "本地时间",
     "scrollToTop": "回到顶部"
   },
